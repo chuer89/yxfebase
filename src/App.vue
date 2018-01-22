@@ -56,4 +56,8 @@ export default {
 
 .fl{float: left}
 .fr{float: right}
+
+.editormd-preview-container, .editormd-html-preview{
+  padding: 0;
+}
 </style>

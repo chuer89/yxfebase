@@ -4,6 +4,8 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import store from './store/index'
+import axios from 'axios'
+import _ from 'lodash'
 
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
@@ -12,6 +14,15 @@ import 'plug/layui/dist/css/layui.css'
 import 'plug/layui/dist/layui.all.js'
 
 Vue.config.productionTip = false
+
+let DOMAIN = {
+  mdHost: 'http://dev.s.56qq.cn/vue_home/src/assets/md'
+}
+
+_.extend(window, {
+  axios,
+  DOMAIN
+})
 
 // store.commit('increment')
 // console.log(store.state.count)

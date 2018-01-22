@@ -4,14 +4,14 @@
       <el-menu :default-openeds="['1', '2']">
         <el-submenu index="1">
           <template slot="title">
-            <i class="el-icon-setting"></i>弹出层
+            <i class="el-icon-printer"></i>弹出层
           </template>
           <el-menu-item-group>
             <el-menu-item index="1-1">
               <router-link :to="{ path: '/module/dialog' }">弹框</router-link>
             </el-menu-item>
             <el-menu-item index="1-2">
-              <router-link :to="{ path: '/Todo1'}">气泡</router-link>
+              <router-link :to="{ path: '/module/button'}">按钮</router-link>
             </el-menu-item>
           </el-menu-item-group>
         </el-submenu>
@@ -27,4 +27,10 @@ export default {
 
 }
 </script>
+<style lang="scss" scoped>
+a {
+  display: block;
+}
+</style>
+
 

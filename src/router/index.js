@@ -17,6 +17,10 @@ export default new Router({
       children: [
         {
           path: '',
+          component: () => import('@/components/rules/info')
+        },
+        {
+          path: 'es6function',
           component: () => import('@/components/rules/es6/function')
         }
       ]
@@ -33,6 +37,10 @@ export default new Router({
         {
           path: 'dialog',
           component: () => import('@/components/module/reminder/dialog')
+        },
+        {
+          path: 'button',
+          component: () => import('@/components/module/reminder/button')
         }
       ]
     },
