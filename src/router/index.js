@@ -13,17 +13,7 @@ export default new Router({
     {
       path: '/',
       name: 'home',
-      component: () => import('@/components/rules/body'),
-      children: [
-        {
-          path: '',
-          component: () => import('@/components/rules/info')
-        },
-        {
-          path: 'es6function',
-          component: () => import('@/components/rules/es6/function')
-        }
-      ]
+      component: () => import('@/components/rules/body')
     },
     {
       path: '/module',

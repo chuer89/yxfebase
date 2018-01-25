@@ -21,7 +21,8 @@ let DOMAIN = {
 
 _.extend(window, {
   axios,
-  DOMAIN
+  DOMAIN,
+  router
 })
 
 // store.commit('increment')
